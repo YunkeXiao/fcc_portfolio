@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Roboto, monospace;
+}
+
+/*----------NAVBAR----------*/
+#navbar{
+    top: 0;
+    width: 100%;
+    background-color: rgba(38, 166, 154, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+}
+.nav-item, .nav-item:link, .nav-item:visited, .nav-item:focus{
+    color:white;
+    text-decoration:none;
+    padding: 2rem;
+}
+.nav-item:hover{
+    animation-name: fade;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+/*----------WELCOME-SECTION----------*/
+#welcome-section{
+    background-color: rgba(38, 166, 154, 1);
+    height: 100vh;
+}
+#welcome-text{
+    text-align: center;
+    padding-top: 15rem;
+}
+h3{
+    font-weight: normal;
+    color: white;
+}
+
+/*----------PROJECTS----------*/
+
+#projects, #tribute-page, #product-page{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projects{
+    margin: 4rem 0 4rem 0;
+}
+.material-icons{
+    margin:1rem;
+}
+#icon1, #icon2{
+    margin-top: 5rem;
+    font-size: 5rem;
+}
+h2{
+    color: rgba(38, 166, 154, 1);
+    font-weight: normal;
+    text-align: center;
+    margin: 0rem 0 1rem 0;
+}
+
+/*----------PROFILE-----------*/
+#profile{
+    background: aquamarine;
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+#linkedin{
+    font-size: 4rem;
+    color:black;
+}
+#linkedin:link, #linkedin:visited, #linkedin:hover, #linkedin:focus{
+    color:black;
+    text-decoration: none;
+}
+/*----------ANIMATION----------*/
+@keyframes fade {
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:0.5;
+    }
+}
+
+@media (max-width: 300px){
+    .material-icons{
+        display: none;
+    }
+}
